@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Meta Tracker</h1>
+    </header>
+    <main>
+        <form id="sales-form">
+            <label for="vendedor">Nome do Vendedor:</label>
+            <input type="text" id="vendedor" placeholder="Digite o nome do vendedor" required>
+
+            <label for="ano">Ano:</label>
+            <input type="number" id="ano" placeholder="Digite o ano" required>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mês</th>
+                        <th>Meta</th>
+                        <th>Realizado</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody id="sales-data">
+                    <!-- Linhas dos meses serão geradas dinamicamente -->
+                </tbody>
+            </table>
+        </form>
+        <button id="download-pdf">Baixar PDF</button> <!-- Botão para gerar o PDF -->
+    </main>
+    <footer>
+        <p>Diego Nascimento - Analista e Desenvolvedor de Sistemas</p>
+        <div class="footer-content">
+            <a href="https://www.linkedin.com/in/diego-vale-do-nascimento-48212215b/" target="_blank">LinkedIn</a>
+            <span>|</span>
+            <a href="https://github.com/DVALENASCIMENTO" target="_blank">GitHub</a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.20/jspdf.plugin.autotable.min.js"></script>
+        <script src="js/script.js"></script> <!-- Script JavaScript -->
+</body>
+</html>
