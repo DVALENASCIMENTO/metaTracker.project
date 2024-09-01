@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 
     // Carregar dados do localStorage
-    const savedData = JSON.parse(localStorage.getItem("salesData")) || {};
+    const savedData = JSON.parse(localStorage.getItem("metaTracker_salesData")) || {};
 
     meses.forEach(mes => {
         let row = document.createElement("tr");
@@ -100,8 +100,8 @@ function calcular() {
         }
     });
 
-    // Salvar os dados no localStorage
-    localStorage.setItem("salesData", JSON.stringify(salesData));
+    // Salvar os dados no localStorage com chave única
+    localStorage.setItem("metaTracker_salesData", JSON.stringify(salesData));
 }
 
 function formatarNumero(valor) {
